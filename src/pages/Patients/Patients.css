@@ -1,0 +1,17 @@
+.patient-card {
+  max-width: 900px;
+  margin: 35px auto;
+}
+
+.patient-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 900px) {
+  .patient-grid {
+    grid-template-columns: 1fr;
+  }
+}

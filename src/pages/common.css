@@ -1,0 +1,43 @@
+.page {
+  padding: 40px;
+}
+
+.glass {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 25px;
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+
+.glass input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.glass button {
+  width: 100%;
+  padding: 12px;
+  background: #4fc3f7;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bold;
+}
+
+.list {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.list li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}

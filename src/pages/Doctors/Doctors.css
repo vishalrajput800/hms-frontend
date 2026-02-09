@@ -1,0 +1,45 @@
+.page {
+  padding: 30px;
+}
+
+.page h1 {
+  margin-bottom: 20px;
+}
+
+.form-box {
+  background: #ffffff;
+  padding: 20px;
+  max-width: 420px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 10px;
+  background: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+.list {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}

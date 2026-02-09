@@ -1,0 +1,37 @@
+.admission-card {
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* PRINT RECEIPT */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .receipt, .receipt * {
+    visibility: visible;
+  }
+  .receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: white;
+    color: black;
+  }
+  button {
+    display: none;
+  }
+}

@@ -1,0 +1,82 @@
+/* =========================
+   BILLING PAGE STYLES
+   ========================= */
+
+.invoice {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.invoice h1,
+.invoice h2,
+.invoice h3,
+.invoice p {
+  margin: 6px 0;
+}
+
+.invoice table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.invoice table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.invoice table tr:last-child td {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.invoice button {
+  margin-top: 20px;
+}
+
+/* =========================
+   PRINT / PDF STYLES
+   ========================= */
+
+@media print {
+  /* Hide everything */
+  body * {
+    visibility: hidden;
+  }
+
+  /* Show only invoice */
+  .invoice,
+  .invoice * {
+    visibility: visible;
+  }
+
+  /* Position invoice for printing */
+  .invoice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none;
+    border-radius: 0;
+    background: white;
+    color: black;
+  }
+
+  /* Remove buttons in print */
+  button {
+    display: none !important;
+  }
+
+  /* Improve table borders in PDF */
+  .invoice table td {
+    border: 1px solid #000;
+  }
+}
