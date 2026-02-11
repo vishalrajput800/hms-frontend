@@ -24,7 +24,7 @@ function Login({ onLogin }) {
   return (
     <div className="login-container">
       <div className="login-box">
-        <h2>Hospital Management System</h2>
+        <h2>Hospital Management System Vishal</h2>
         <p>Login</p>
 
         {error && <p className="error">{error}</p>}
